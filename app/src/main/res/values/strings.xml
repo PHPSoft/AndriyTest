@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AndriyTest</string>
+    <string name="title">Select value</string>
+    <string name="agree">agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="example_title">Check box select</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="dont_ask_again">Don\'t ask again</string>
+    <string name="choose">Choose</string>
+    <string name="lQuantity">Quantity:</string>
+    <string name="lValue">Value:</string>
+    <string name="lPriority">Priority:</string>
+    <string name="lAttributes">Attributes:</string>
+    <string name="lEmail">Email:</string>
+    <string name="send_email">Send Email</string>
+    <string name="lDate">Date:</string>
+    <string name="edit">edit</string>
+    <string name="input">Edit value</string>
+    <string name="input_content">Enter your data</string>
+    <string name="enterQuantity">Enter quantity</string>
+    <string name="enterValue">Enter value</string>
+    <string name="selectPriority">Select priority</string>
+    <string name="selectAttributes">Select attributes</string>
+    <string name="enterEmail">Enter email</string>
+    <string name="enterTitle">Enter value</string>
+</resources>

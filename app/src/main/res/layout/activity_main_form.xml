@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/mainTable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:shrinkColumns="1"
+            android:stretchColumns="*">
+
+        <TableRow>
+        <!-- Quantity -->
+            <TextView
+                android:id="@+id/labelQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/lQuantity" />
+
+            <EditText
+                android:id="@+id/valueQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:ems="10"
+                android:contentDescription="@string/enterQuantity"
+                android:inputType="number"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonQuantity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick=""
+                android:text="@string/edit" />
+
+        </TableRow>
+        <TableRow>
+        <!-- Value -->
+            <TextView
+                android:id="@+id/labelValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/lValue"/>
+
+            <EditText
+                android:id="@+id/valueValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/enterValue"
+                android:padding="10dip"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:onClick=""
+                android:text="@string/edit" />
+
+        </TableRow>
+        <TableRow>
+        <!-- Priority -->
+            <TextView
+                android:id="@+id/labelPriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/lPriority"/>
+
+            <EditText
+                android:id="@+id/valuePriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/selectPriority"
+                android:padding="10dip"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonPriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:onClick=""
+                android:text="@string/edit" />
+
+        </TableRow>
+        <TableRow>
+        <!-- Attributes -->
+            <TextView
+                android:id="@+id/labelAttributes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/lAttributes"/>
+
+            <EditText
+                android:id="@+id/valueAttributes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/selectAttributes"
+                android:padding="10dip"
+                android:inputType="textMultiLine"
+                android:ems="10"/>
+
+            <Button
+                android:id="@+id/buttonAttributes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:onClick=""
+                android:text="@string/edit" />
+
+        </TableRow>
+        <TableRow>
+        <!-- Date -->
+            <TextView
+                android:id="@+id/labelDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/lDate"/>
+
+            <EditText
+                android:id="@+id/valueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:ems="10"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/buttonDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showDatePicker"
+                android:padding="10dip"
+                android:text="@string/edit" />
+
+        </TableRow>
+        <TableRow>
+        <!-- Email -->
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/lEmail"/>
+
+            <EditText
+                android:id="@+id/valueEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/enterEmail"
+                android:padding="10dip"
+                android:ems="10"
+                android:inputType="textEmailAddress"/>
+
+            <Button
+                android:id="@+id/buttonEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/edit" />
+
+        </TableRow>
+        <TableRow>
+        <!-- Send email -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonSendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/send_email"
+                android:textAlignment="center" />
+
+        </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
